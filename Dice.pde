@@ -11,11 +11,12 @@ for(int x = 11; x >= 0;x--){
  Die n = new Die (x*50,x*0);
  n.roll();
  n.show();
+ dotSum = dotSum + n.roller;
   for( int y = 11; y>0;y--){
  Die g = new Die(x*50, y*50);
  g.roll();
  g.show();
- dotSum = dotSum + n.roller;
+ dotSum = dotSum + g.roller;
   }
 }
 fill(255);
